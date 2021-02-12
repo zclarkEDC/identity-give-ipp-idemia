@@ -6,11 +6,12 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("idemia_api", "0003_auto_20210106_1659"),
+        ("api", "0003_auto_20210106_1659"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name="enrollmentrecord", options={"ordering": ["creation_date"]},
+            name="enrollmentrecord",
+            options={"ordering": ["creation_date"]},
         ),
     ]

@@ -7,7 +7,7 @@ import django.utils.timezone
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("idemia_api", "0002_auto_20210106_1602"),
+        ("api", "0002_auto_20210106_1602"),
     ]
 
     operations = [
@@ -17,13 +17,19 @@ class Migration(migrations.Migration):
             new_name="first_name",
         ),
         migrations.RenameField(
-            model_name="enrollmentrecord", old_name="_last_name", new_name="last_name",
+            model_name="enrollmentrecord",
+            old_name="_last_name",
+            new_name="last_name",
         ),
         migrations.RenameField(
-            model_name="enrollmentrecord", old_name="_status", new_name="record_status",
+            model_name="enrollmentrecord",
+            old_name="_status",
+            new_name="record_status",
         ),
         migrations.RenameField(
-            model_name="enrollmentrecord", old_name="_uuid", new_name="record_uuid",
+            model_name="enrollmentrecord",
+            old_name="_uuid",
+            new_name="record_uuid",
         ),
         migrations.AddField(
             model_name="enrollmentrecord",
